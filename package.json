@@ -1,0 +1,19 @@
+{
+  "name": "random_contact_projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "divyam",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.4.1"
+  }
+}
