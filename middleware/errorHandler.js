@@ -14,8 +14,11 @@ const errorHandler = (err, req, res, next) => {
         case constants.SERVER_ERROR:   
         res.json({title:"Server Error", message: err.message, stackTrace: err.stack });
         break;
+        case constants.NOT_FOUND:
+            res.json({title:"not found Error", message: err.message, stackTrace: err.stack });
         default:
-            console.log("No Error....")
+            console.log("No Error....");
+            res.json({title:"not found Error", message: err.message, stackTrace: err.stack });
             break;
     }
     
